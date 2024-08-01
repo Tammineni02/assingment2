@@ -1,6 +1,6 @@
 options:
   logging: CLOUD_LOGGING_ONLY  # Or specify a logs bucket here
-  
+
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/core-plate-424123-h0/flask-app:latest', '.']
@@ -8,7 +8,14 @@ steps:
   args: ['push', 'gcr.io/core-plate-424123-h0/flask-app:latest']
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'deploy/deployment.yaml']
+  env:
+    - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=my-cluster'
+ 
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['apply', '-f', 'deploy/service.yaml']
+  env:
+    - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=my-cluster'
 images:
 - 'gcr.io/core-plate-424123-h0/flask-app:latest'
