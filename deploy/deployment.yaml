@@ -21,7 +21,7 @@ spec:
         - containerPort: 5000
         env:
         - name: GOOGLE_APPLICATION_CREDENTIALS
-          value: "/home/manujabandi/gemini-app/backend/core-plate-424123-h0-48af2af71658.json"
+          value: "/home/manujabandi/core-plate-424123-h0-48af2af71658.json"
         volumeMounts:
         - name: secret-volume
           mountPath: /secrets
