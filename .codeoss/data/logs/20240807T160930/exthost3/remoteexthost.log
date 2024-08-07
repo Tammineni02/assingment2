@@ -1,6 +1,0 @@
-2024-08-07 18:30:13.069 [info] Extension host with pid 4490 started
-2024-08-07 18:30:13.112 [info] Lock '/home/tammineninikhil02/.codeoss/data/User/workspaceStorage/93f328d/vscode.lock': Lock acquired.
-2024-08-07 18:30:13.163 [info] Eager extensions activated
-2024-08-07 18:32:16.339 [info] Extension host terminating: received terminate message from renderer
-2024-08-07 18:32:16.339 [info] Lock '/home/tammineninikhil02/.codeoss/data/User/workspaceStorage/93f328d/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
-2024-08-07 18:32:16.340 [info] Extension host with pid 4490 exiting with code 0
