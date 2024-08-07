@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 def generate_text(prompt):
     # Set the API key
-    api_key = "AIzaSyAOSrMV7-y6zrSJ5YUoxLW0N_Jnb5-dWBs"
+    api_key = "AIzaSyD8819VtNwf5OWsz0LVeqUNgMONFPRFGLA"
     
     # URL for the Gemini model endpoint
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={api_key}"
